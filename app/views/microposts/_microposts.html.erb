@@ -16,7 +16,7 @@
             <%= link_to "Delete", micropost, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-xs' %>
           <% end %>
           
-          <%= render 'favorite_button' %>
+          <%= render 'favorites/favorite_button', user: @user %>
         </div>
       </div>
     </li>
